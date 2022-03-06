@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap');
+
+/* core page */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    color: #FCFCFC;
+}
+
+.main {
+    height: 100vh;
+}
+
+/* header */
+
+.header {
+    position: sticky;
+    background: #FCFCFC;
+    color: black;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    height: 70px;
+}
+
+.header .title {
+    font-family: 'Playfair Display';
+    font-size: 2em;
+    margin-left: 40px;
+    align-self: center;
+}
+
+.header .nav {
+    margin-right: 40px;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.header .nav ul {
+    font-size: 1.5em;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.header .title, .header .nav ul li {
+    cursor: pointer;
+}
+
+/* main content space */
+
+.content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url('./img/chef-1.png');
+    background-size: cover;
+}
+
+/* shared space */
+
+.home, .menu, .gallery, .contact {
+    width: 65%;
+}
+
+.ul {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* home */
+
+.home {
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+}
+
+.home .title {
+    font-size: 3em;
+}
+
+.home .description {
+    font-size: 1.5em;
+    width: 50%;
+}
+
+.home .buttonContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.home .reserveButton, .home .menuButton {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+/* menu */
+
+.menu {
+
+}
+
+/* gallery */
+
+.gallery {
+
+}
+
+/* contact */
+
+.contact {
+
+}
+
+/* mobile and tablet scaling */
+
+@media only screen and (max-width: 60em){
+    .content {
+        background-image: url('./img/chef-4.png');
+        background-size: cover;
+    }
+
+    .header .nav {
+        display: none;
+    }
+
+    .home {
+        width: 80%;
+    }
+}
