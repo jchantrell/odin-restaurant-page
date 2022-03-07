@@ -94,14 +94,14 @@ body {
 
 .home .buttonContainer {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .home .reserveButton, .home .menuButton {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 50px;
     width: 150px;
-    height: 50px;
+    height: 40px;
     border: none;
     cursor: pointer;
 }
