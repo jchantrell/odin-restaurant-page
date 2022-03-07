@@ -6,4 +6,3 @@ const clearContent = () => {
 }
 
 clearContent();
-home();
