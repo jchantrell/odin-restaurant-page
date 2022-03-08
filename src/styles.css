@@ -109,7 +109,32 @@ body {
 /* menu */
 
 .menu {
+    max-width: 50%;
+}
 
+.menu .title {
+    font-size: 2em;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+.menu .item {
+    font-size: 1.5em;
+    display: flex;
+    align-items: baseline;
+}
+
+.menu .middle {
+    font-size: 1.5em;
+    border-bottom: 1px dotted #eee;
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+.menu .ingredients {
+    font-size: 1.5em;
+    color: #bbb;
+    margin-bottom: 1em;
 }
 
 /* gallery */
