@@ -1,6 +1,8 @@
 import './styles.css';
 import {home} from './home.js';
-import {menu, createNewItem} from './menu.js';
+import {menu} from './menu.js';
+import {gallery} from './gallery.js';
+import {contact} from './contact';
 
 const clearContent = () => {
     document.querySelector('.content').replaceChildren();
@@ -25,13 +27,17 @@ const changePage = (() => {
             menu();   
         };
         if(event.target.classList.contains('galleryLink')) {
-            
+            clearContent();
+            gallery();     
         };
         if(event.target.classList.contains('contactLink')) {
-            
+            clearContent();
+            contact();    
         };
 
       });
 })();
 
-home();
+clearContent();
+
+gallery();

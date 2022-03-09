@@ -56,12 +56,12 @@ body {
 
 .content {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
     background-image: url('./img/chef-1.png');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* shared space */
@@ -80,7 +80,6 @@ body {
 .home {
     justify-self: center;
     align-self: center;
-    width: 60%;
 }
 
 .home .title {
@@ -140,7 +139,23 @@ body {
 /* gallery */
 
 .gallery {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: wrap row;
+    width: 60%;
+    gap: 10px;
+}
 
+
+.gallery img {
+    float: left;
+    width:  30%;
+    max-height: 50%;
+    object-fit: cover;
+    border: solid 3px #eee;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 /* contact */
