@@ -85,6 +85,3 @@ let items = [
         "ingredients": "ingredient, ingredient, ingredient"
     }
 ];
-
-createNewItem('Rice Pudding', '10', 'Ingredient, ingredient, ingredient');
-createNewItem('Bread', '5', 'Ingredient, ingredient, ingredient');

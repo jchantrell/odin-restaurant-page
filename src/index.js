@@ -30,14 +30,10 @@ const changePage = (() => {
             clearContent();
             gallery();     
         };
-        if(event.target.classList.contains('contactLink')) {
+        if(event.target.classList.contains('contactLink') || event.target.classList.contains('reserveButton')) {
             clearContent();
             contact();    
         };
 
       });
 })();
-
-clearContent();
-
-gallery();
