@@ -8,6 +8,7 @@ body {
     border: 0;
     padding: 0;
     color: #FCFCFC;
+    background-color: black;
 }
 
 .main {
@@ -178,11 +179,11 @@ body {
 .gallery {
     margin: 5px;
     line-height: 0;
-   -webkit-column-count: 5;
+   -webkit-column-count: 4;
    -webkit-column-gap: 5px;
-   -moz-column-count: 5;
+   -moz-column-count: 4;
    -moz-column-gap: 5px;
-   column-count: 5;
+   column-count: 4;
    column-gap: 5px;
 }
 
@@ -218,6 +219,10 @@ body {
 
     .home {
         width: 80%;
+    }
+    
+    .menu {
+        width: 100%;
     }
 }
 
