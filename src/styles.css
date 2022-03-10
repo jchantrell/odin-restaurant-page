@@ -50,8 +50,8 @@ body {
 }
 
 .mobileMenu {
-    border-bottom: 3px solid black;
-    border-bottom-left-radius: 15px;
+    border-bottom: 2px solid #FCFCFC;
+    border-bottom-left-radius: 10px;
     margin: 0;
     display: flex;
     flex-flow: column;
@@ -209,6 +209,10 @@ body {
 
 .contact {
 
+}
+
+.contact input, .contact textarea {
+    display: block;
 }
 
 /* mobile and tablet scaling */

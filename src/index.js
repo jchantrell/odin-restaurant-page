@@ -74,5 +74,5 @@ const changePage = (() => {
       });
 })();
 
-initialisePage();
-loadPage('home');
+`initialisePage();
+loadPage('home');`

@@ -84,3 +84,4 @@ let items = [
     }
 ];
 
+createNewItem('Risotto', '25', 'ingredient, ingredient, ingredient')
