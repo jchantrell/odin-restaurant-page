@@ -1,7 +1,6 @@
 export const gallery = () => {
     const galleryContainer = document.createElement('div');
     galleryContainer.classList.add('gallery');
-    document.querySelector('.galleryLink').classList.add('ul')
     document.querySelector('.content').appendChild(galleryContainer);    
     
     let src = [

@@ -1,13 +1,11 @@
 export const home = () => {
     
-    const homeLink = document.querySelector('.homeLink');
     const homeContainer = document.createElement('div');
     const title = document.createElement('div');
     const description = document.createElement('div');
     const buttons = document.createElement('div');
     const reserve = document.createElement('button');
     const menu = document.createElement('button');
-    homeLink.classList.add('ul');
     document.querySelector('.content').appendChild(homeContainer);
     homeContainer.classList.add('home');
     homeContainer.appendChild(title);

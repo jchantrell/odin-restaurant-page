@@ -4,11 +4,6 @@ import {menu} from './menu.js';
 import {gallery} from './gallery.js';
 import {contact} from './contact';
 
-const clearContent = () => {
-    document.querySelector('.content').replaceChildren();
-    clearLinks();
-};
-
 const clearLinks = () => {
     const links = document.querySelectorAll('.link')
     links.forEach (link => {
@@ -26,26 +21,58 @@ const showMobileMenu = (() => {
 
 })();
 
+const initialisePage = () => {
+    home();
+    menu();
+    gallery();
+}
+
+const loadPage = (page) => {
+    document.querySelector('.home').style.display = 'none';
+    document.querySelector('.menu').style.display = 'none';
+    document.querySelector('.gallery').style.display = 'none';
+    document.querySelector('.contact').style.display = 'none';
+
+    if (page == 'home'){
+        document.querySelector('.home').style.display = 'block';
+        document.querySelector('.homeLink').classList.add('ul');
+    }
+    if (page == 'menu'){
+        document.querySelector('.menu').style.display = 'flex';
+        document.querySelector('.menuLink').classList.add('ul');
+    }
+    if (page == 'gallery'){
+        document.querySelector('.gallery').style.display = 'block';
+        document.querySelector('.galleryLink').classList.add('ul');
+    }
+    if (page == 'contact'){
+        document.querySelector('.contact').style.display = 'block';
+        document.querySelector('.contactLink').classList.add('ul');
+    }
+
+}
+
 const changePage = (() => {
     document.body.addEventListener('click', function(event){
         if(event.target.classList.contains('homeLink') || event.target.classList.contains('homeLinkMobile')) {
-            clearContent();
-            home();
+            clearLinks();
+            loadPage('home');
         };
         if(event.target.classList.contains('menuLink') || event.target.classList.contains('menuButton') || event.target.classList.contains('menuLinkMobile')) {
-            clearContent();
-            menu();   
+            clearLinks();
+            loadPage('menu');   
         };
         if(event.target.classList.contains('galleryLink') || event.target.classList.contains('galleryLinkMobile')) {
-            clearContent();
-            gallery();     
+            clearLinks();
+            loadPage('gallery');
         };
         if(event.target.classList.contains('contactLink') || event.target.classList.contains('reserveButton') || event.target.classList.contains('contactLinkMobile')) {
-            clearContent();
-            contact();    
+            clearLinks();
+            loadPage('contact');   
         };
 
       });
 })();
 
-home();
+initialisePage();
+loadPage('home');

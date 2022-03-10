@@ -9,8 +9,6 @@ export const menu = () => {
     const menu = document.createElement('div');
     const title = document.createElement('div');
     const menuItems = document.createElement('div');
-    const menuLink = document.querySelector('.menuLink');
-    menuLink.classList.add('ul')
     document.querySelector('.content').appendChild(menu);
     menu.classList.add('menu');
     menu.appendChild(title);
@@ -86,13 +84,3 @@ let items = [
     }
 ];
 
-`createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');
-createNewItem('test', 'test', 'test');`
