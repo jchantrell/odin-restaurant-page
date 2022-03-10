@@ -50,7 +50,8 @@ body {
 }
 
 .mobileMenu {
-    border: 0;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 15px;
     margin: 0;
     display: flex;
     flex-flow: column;
@@ -91,13 +92,22 @@ body {
 /* main content space */
 
 .content {
-    height: 100vh;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-content: center;
     background-image: url('./img/chef-1.png');
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content::webkit-scrollbar {
+    display: none;
 }
 
 
