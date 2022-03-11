@@ -208,11 +208,21 @@ body {
 /* contact */
 
 .contact {
-
+    margin-top: 40px;
+    justify-content: center;
 }
 
-.contact input, .contact textarea {
-    display: block;
+.contact form {
+    display: grid;
+    gap: 10px;
+}
+
+.contact .formSubmit {
+    margin-top: 40px;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px;
+    font-size: 1em;
 }
 
 /* mobile and tablet scaling */

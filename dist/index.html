@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restaurant Mock</title>
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -36,24 +36,23 @@
             <div class="contact">
                 <form>
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname">
+                    <input type="text" name="fname" required>
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname"> <br>
+                    <input type="text" name="lname" required>
                     <label for="email">Email</label>
-                    <input type="email" name ='email'>
-                    <label for="tel">Telephone Number</label>
-                    <input type="tel">
+                    <input type="email" name="email" required>
+                    <label for="tel">Phone Number</label>
+                    <input type="tel" name="tel" required>
                     <label for="date">Date</label>
-                    <input type='date'>
+                    <input type='date' required>
                     <label for="time">Time</label>
-                    <input type='time'>
-                    <label for="number">No. of guests</label>
-                    <input type="number">
-                    <label for="comments">Special Requests</label>
-                    <textarea name="comments" id="" cols="50" rows="5"></textarea>
-                    </form>
+                    <input type='time' required>
+                    <label for="number">Number of Guests</label>
+                    <input type="number" required>
+                    <button class="formSubmit">Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
 
 </body>
 </html>
