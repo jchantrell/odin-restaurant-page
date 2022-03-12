@@ -25,6 +25,7 @@ const initialisePage = () => {
     home();
     menu();
     gallery();
+    contact();
 }
 
 const loadPage = (page) => {
@@ -54,7 +55,7 @@ const loadPage = (page) => {
 
 const changePage = (() => {
     document.body.addEventListener('click', function(event){
-        if(event.target.classList.contains('homeLink') || event.target.classList.contains('homeLinkMobile')) {
+        if(event.target.classList.contains('homeLink') || event.target.classList.contains('homeLinkMobile') || event.target.classList.contains('businessTitle')) {
             clearLinks();
             loadPage('home');
         };
@@ -74,5 +75,5 @@ const changePage = (() => {
       });
 })();
 
-`initialisePage();
-loadPage('home');`
+initialisePage();
+loadPage('home');

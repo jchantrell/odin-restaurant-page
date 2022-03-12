@@ -28,11 +28,12 @@ body {
     height: 70px;
 }
 
-.header .title {
+.header .businessTitle {
     font-family: 'Playfair Display';
     font-size: 2em;
     margin-left: 40px;
     align-self: center;
+    cursor: pointer;
 }
 
 .header .nav {
@@ -79,6 +80,10 @@ body {
     width: auto;
     text-align: center;
     border-top: 2px solid black;
+}
+
+.mobileMenu li:hover, .nav li:hover {
+    color: #a3a3a3;
 }
 
 .header .nav .mobileMenuButton {
@@ -209,20 +214,32 @@ body {
 
 .contact {
     margin-top: 40px;
-    justify-content: center;
+    font-size: 1.5em;
 }
 
 .contact form {
     display: grid;
+    justify-content: center;
     gap: 10px;
 }
 
+.contact input {
+    width: 300px;
+    height: 30px;
+}
+
 .contact .formSubmit {
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 15px;
     border: 0;
     padding: 10px;
     font-size: 1em;
+}
+
+.contact .gmap {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /* mobile and tablet scaling */
@@ -279,5 +296,9 @@ body {
      -moz-column-count:    1;
      -webkit-column-count: 1;
      column-count:         1;
+    }
+
+    .contact input {
+        width: 250px;
     }
 }
